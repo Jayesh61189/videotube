@@ -1,3 +1,3 @@
-# youtube clone tutorial
+# Youtube clone tutorial
 
-This is youtube clone
+This is Youtube Clone
