@@ -1,4 +1,4 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import morgan from "morgan";
@@ -13,6 +13,8 @@ app.use(
     credentials: true,
   })
 );
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
 app.use(morgan("common"));
 
 import mainRouter from "./routes/index.js";
